@@ -116,6 +116,7 @@ OUT DWORD* addr
 		}
 		if (!VirtualProtect(va, VirtualSize, Attributes, &Attributes)) return NULL;
 	}
+
 	return (HMODULE)mapping;
 }
 
@@ -151,6 +152,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	if (h_module)
 	{
 		PPEB Peb;
+
+		// инициализация Peb адрессом из памяти
 		__asm 
 		{
 			push eax
@@ -158,8 +161,10 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 			mov Peb, eax
 			pop eax
 		}
+
 		Peb->ImageBaseAddress = h_module;
 
+		// замена в памяти адреса загрузчика на ардес запускаемой программы
 		PLDR_DATA_TABLE_ENTRY pLdrEntry = (PLDR_DATA_TABLE_ENTRY)(Peb->Ldr->ModuleListLoadOrder.Flink);
 		pLdrEntry->DllBase = h_module;
 
