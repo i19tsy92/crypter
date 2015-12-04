@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Crypter", "crypter\Crypter.vcxproj", "{AAEF6154-1C3C-4E32-ACE4-480507E4FBF4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Decrypter.exe", "decrypter\Decrypter.vcxproj", "{82182C55-756F-43FF-9D1B-922C1BDFE23A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AAEF6154-1C3C-4E32-ACE4-480507E4FBF4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{AAEF6154-1C3C-4E32-ACE4-480507E4FBF4}.Debug|Win32.Build.0 = Debug|Win32
+		{AAEF6154-1C3C-4E32-ACE4-480507E4FBF4}.Release|Win32.ActiveCfg = Release|Win32
+		{AAEF6154-1C3C-4E32-ACE4-480507E4FBF4}.Release|Win32.Build.0 = Release|Win32
+		{82182C55-756F-43FF-9D1B-922C1BDFE23A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{82182C55-756F-43FF-9D1B-922C1BDFE23A}.Debug|Win32.Build.0 = Debug|Win32
+		{82182C55-756F-43FF-9D1B-922C1BDFE23A}.Release|Win32.ActiveCfg = Release|Win32
+		{82182C55-756F-43FF-9D1B-922C1BDFE23A}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
