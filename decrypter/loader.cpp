@@ -131,8 +131,6 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	LPBYTE crypted_image = (LPBYTE)0xDEADBEEF;
 	DWORD crypted_image_size = 0xBEEFCACE;
 
-	// ложное поле с ключом
-	DWORD key = 0xD408CA6E;
 	DWORD dwImageTempSize = crypted_image_size;
 
 	// выделение памяти под распакованый образ
