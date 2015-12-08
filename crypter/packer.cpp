@@ -21,6 +21,7 @@ int main(int argc, char *argv[])
 {	
 	if (argc == 1){
 		printf("%s\n", "Usage: Crypter.exe <file for crypt>");
+		printf("%s\n", "For help use: help");
 	}
 	else {
 		if (!strcmp(argv[1], "help")) {
